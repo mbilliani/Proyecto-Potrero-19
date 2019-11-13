@@ -39,7 +39,7 @@ Released   : 20130920
 			<li><a href="biblioteca.html" accesskey="2" title="">Biblioteca</a></li>
 			<li><a href="actividades.html" accesskey="3" title="">Actividades</a></li>
 			<li><a href="historia.html" accesskey="4" title="">Nuestra Historia</a></li>
-			<li><a href="sesion.html" accesskey="5" title="">Inicia Sesión</a></li>
+			<li><a href="sesion.php" accesskey="5" title="">Inicia Sesión</a></li>
 		</ul>
 	</div>
 </div></div>
@@ -49,7 +49,7 @@ Released   : 20130920
 			<h2>Crea tu Usuario</h2>
 			<span class="byline">No olvides anotar tus datos.</span> </div>
 
-			<!-- JavaScript -->
+			<!-- Formulario -->
 
 			<h1>Ingresa Tus Datos</h1>
 <br>
@@ -60,12 +60,9 @@ Released   : 20130920
 	                    <h3><label for="nombre">Nombre:</label></h3>
 	                        <input name="nombre" type="text" id="nombre" class="nombre" placeholder="Pon tu nombre" autofocus=""/ ></p>
 <br>
-	                    <!--=============================================================================================-->
-	                    <!--La sisguientes 2 líneas son para agregar campos al formulario con sus respectivos labels-->
-	                    <!--Puedes usar tantas como necesites-->
+
 	                    <h3><label for="apellidos">Apellidos:</label></h3>
 	                        <input name="apellidos" type="text" id="apellidos" class="apellidos" placeholder="Pon tus apellidos" /></p>
-	                    <!--=============================================================================================-->
 <br>
 	                    <h3><label for="correo">Correo:</label></h3>
 	                        <input name="correo" type="text" id="correo" class="correo" placeholder="Pon tu mail" /></p>
@@ -79,6 +76,8 @@ Released   : 20130920
 	                    <p id="bot"><input name="submit" type="submit" id="boton" value="Registrar" class="boton"/></p>
 	                </form>
 	            </div>
+
+  <!-- Fin del Formulario -->
 
 		<div id="onecolumn">
 			<div class="title">
@@ -110,7 +109,7 @@ Released   : 20130920
 				</li>
 				<li>
 						<img src="images/instagram.png" width="32" height="32">
-						<p><a href="https://www.instagram.com/capillantrasradelrosario/" target="_blank">Seguinos en<br>Instagram</a></p>
+						<p><a href="https://www.instagram.com/capillantrasradelrosario" target="_blank">Seguinos en<br>Instagram</a></p>
 				</li>
 
 				<li>
@@ -120,19 +119,6 @@ Released   : 20130920
 
 	    </ul>
 	</div>
-
-<!-- PHP -->
-
-<?php
-required_once("./php/myDBC.php");
-if(isset($_SESSION['session']))
-{
-    header("location:principal.php");
-    exit;
-}
-?>
-
-<!-- Fin PHP -->
 
  </body>
  </html>

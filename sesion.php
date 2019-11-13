@@ -3,12 +3,10 @@
 Design by TEMPLATED
 http://templated.co
 Released for free under the Creative Commons Attribution License
-
 Name       : Mongoose
 Description: A two-column, fixed-width design with dark color scheme.
 Version    : 1.0
 Released   : 20130920
-
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -39,10 +37,13 @@ Released   : 20130920
 			<li><a href="biblioteca.html" accesskey="2" title="">Biblioteca</a></li>
 			<li><a href="actividades.html" accesskey="3" title="">Actividades</a></li>
 			<li><a href="historia.html" accesskey="4" title="">Nuestra Historia</a></li>
-			<li class="current_page_item"><a href="sesion.html" accesskey="5" title="">Inicia Sesión</a></li>
+			<li class="current_page_item"><a href="sesion.php" accesskey="5" title="">Inicia Sesión</a></li>
 		</ul>
 	</div>
 </div></div>
+
+<!-- Cuerpo -->
+
 <div id="page" class="container">
 	<div id="content">
 		<div class="title">
@@ -59,14 +60,14 @@ Released   : 20130920
 			       <tr>
 			         <th scope="row"><h2>Usuario</h2></th>
 			         <td><span class="cnt">
-			           <input name="usuario" type="text" class="Input" value="" size="20" />
+			           <input name="usuario" placeholder="Nombre de Usuario" type="text" class="Input" value="" size="20" />
 			         </span></td>
 			       </tr>
 			       <tr>
 							 <br>
 			         <th height="33" scope="row"><h2>Clave</h2></th>
 			         <td><span class="cnt">
-			           <input name="password" type="password" class="Input" value="" size="20" />
+			           <input name="password" placeholder="Contraseña" type="password" class="Input" value="" size="20" />
 			         </span></td>
 			         <td><span class="cnt">
 			           <input value="Inicia Sesión" target="_parent" onclick="Login()" type="button" class="boton"/>
@@ -78,27 +79,29 @@ Released   : 20130920
 			<!-- Java Script -->
 
 			<script language="JavaScript">
+
 			function Login(){
 			var done=0;
 			var usuario=document.login.usuario.value;
 			var password=document.login.password.value;
-			if (usuario=="USUARIO1" && password=="CONTRASEÑA1") {
-			window.location="TU_PAGINA_WEB.HTML";
+			if (usuario=="PROFESOR" && password=="PROFESOR1") {
+			window.location="iniciop.html";
 			}
-			if (usuario=="USUARIO2" && password=="CONTRASEÑA2") {
-			window.location="TU_PAGINA_WEB.HTML";
+			if (usuario=="ALUMNO" && password=="ALUMNO1") {
+			window.location="inicioa.html";
 			}
 			if (usuario=="" && password=="") {
 			window.location="errorpopup.html";
 			}
 			}
-			        </script>
-			</center>
+			</script></center>
 			<script language="Javascript">
 			// Begin -->
 			document.oncontextmenu = function(){return false}
 			// End -->
 			</script>
+
+     <!-- Fin Java Script -->
 
 		<div id="onecolumn">
 			<div class="title">
@@ -114,9 +117,7 @@ Released   : 20130920
 				<href="sesion.php">
         <div align="center"> <img src="images/pluma.png"> </div>
 			</li>
-
 		</ul>
-
 	</div>
 </div>
 <div id="copyright">
@@ -132,17 +133,13 @@ Released   : 20130920
 				</li>
 				<li>
 						<img src="images/instagram.png" width="32" height="32">
-						<p><a href="https://www.instagram.com/capillantrasradelrosario/" target="_blank">Seguinos en<br>Instagram</a></p>
+						<p><a href="https://www.instagram.com/capillantrasradelrosario" target="_blank">Seguinos en<br>Instagram</a></p>
 				</li>
-
 				<li>
 						<img src="images/gmail.png" width="32" height="32">
 						<p><a href=" https://mail.google.com/mail/?view=cm&fs=1&to=capillaMRSN@gmail.com&su=Asunto&body=cuerpo%20mensaje" target="_blank">Contactanos<br>Gmail</a></p>
 				</li>
-
 	    </ul>
 	</div>
-
-
 </body>
 </html>
