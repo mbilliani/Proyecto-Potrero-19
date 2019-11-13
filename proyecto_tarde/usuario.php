@@ -20,7 +20,7 @@ Released   : 20130920
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -37,43 +37,61 @@ Released   : 20130920
 		<ul>
 			<li><a href="index.html" accesskey="1" title="">Inicio</a></li>
 			<li><a href="biblioteca.html" accesskey="2" title="">Biblioteca</a></li>
-			<li class="current_page_item"><a href="actividades.html" accesskey="3" title="">Actividades</a></li>
+			<li><a href="actividades.html" accesskey="3" title="">Actividades</a></li>
 			<li><a href="historia.html" accesskey="4" title="">Nuestra Historia</a></li>
 			<li><a href="sesion.php" accesskey="5" title="">Inicia Sesión</a></li>
 		</ul>
 	</div>
 </div></div>
-
-<!-- Cuerpo -->
-
 <div id="page" class="container">
 	<div id="content">
 		<div class="title">
-			<h2>Actividades</h2>
-			<span class="byline">Actividades digitales y recurso</span> </div>
+			<h2>Crea tu Usuario</h2>
+			<span class="byline">No olvides anotar tus datos.</span> </div>
 
-		<p>En esta sección encontrarás distintos tipos de materiales didácticos, tales como recursos digitales (que sean con y sin conexión a internet). Actividades de texto para imprimir o juegos para implementar en el aula.</p>
+			<!-- Formulario -->
+
+			<h1>Ingresa Tus Datos</h1>
+<br>
+<br>
+	            <div id="cuerpo">
+
+	                <form id="form-login" action="#" method="post" >
+	                    <h3><label for="nombre">Nombre:</label></h3>
+	                        <input name="nombre" type="text" id="nombre" class="nombre" placeholder="Pon tu nombre" autofocus=""/ ></p>
+<br>
+
+	                    <h3><label for="apellidos">Apellidos:</label></h3>
+	                        <input name="apellidos" type="text" id="apellidos" class="apellidos" placeholder="Pon tus apellidos" /></p>
+<br>
+	                    <h3><label for="correo">Correo:</label></h3>
+	                        <input name="correo" type="text" id="correo" class="correo" placeholder="Pon tu mail" /></p>
+<br>
+	                    <h3><label for="pass">Password:</label></h3>
+	                        <input name="pass" type="password" id="pass" class="pass" placeholder="Pon tu contraseña"/ ></p>
+<br>
+	                    <h3><label for="repass">Repetir Password:</label></h3>
+	                        <input name="repass" type="password" id="repass" class="repass" placeholder="Repite contraseña" /></p>
+<br>
+	                    <p id="bot"><input name="submit" type="submit" id="boton" value="Registrar" class="boton"/></p>
+	                </form>
+	            </div>
+
+  <!-- Fin del Formulario -->
+
 		<div id="onecolumn">
 			<div class="title">
-				<h2>Recursos Digitales</h2>
+				<h2>Para finalizar</h2>
 			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem.</p>
+			<p>Valida tu nueva cuenta en nuestra página, ingresando a tu correo electrónico. <a href="index.html" target="_blank"> ¡Bienvenido!</a></p>
 		</div>
 	</div>
-	<div id="sidebar">
+  <div id="sidebar">
 		<ul class="style1">
 			<li class="first">
-				<h3>Juegos</h3>
-				<i><b><a href="sesion.php">Inicia Sesión</a></b> para obtener más información.</i>
+				<href="sesion.php">
+				<div align="center"> <img src="images/pluma.png"> </div>
 			</li>
-			<li>
-				<h3>Dinámicas</h3>
-					<i><b><a href="sesion.php">Inicia Sesión</a></b> para obtener más información.</i>
-			</li>
-      <li>
-        <h3>Actividades para imprimir</h3>
-        	<i><b><a href="sesion.php">Inicia Sesión</a></b> para obtener más información.</i>
-			<li>
 		</ul>
 
 	</div>
@@ -81,7 +99,7 @@ Released   : 20130920
 <div id="copyright">
   <p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
 
-	<!-- Footer -->
+	<!-- Redes Sociales -->
 
 	<div class="sticky-container">
 	    <ul class="sticky">
@@ -96,11 +114,11 @@ Released   : 20130920
 
 				<li>
 						<img src="images/gmail.png" width="32" height="32">
-						<p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=capillaMRSN@gmail.com&su=Asunto&body=cuerpo%20mensaje" target="_blank">Contactanos<br>Gmail</a></p>
+						<p><a href=" https://mail.google.com/mail/?view=cm&fs=1&to=capillaMRSN@gmail.com&su=Asunto&body=cuerpo%20mensaje" target="_blank">Contactanos<br>Gmail</a></p>
 				</li>
 
 	    </ul>
 	</div>
 
-</body>
-</html>
+ </body>
+ </html>

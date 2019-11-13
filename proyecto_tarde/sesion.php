@@ -3,12 +3,10 @@
 Design by TEMPLATED
 http://templated.co
 Released for free under the Creative Commons Attribution License
-
 Name       : Mongoose
 Description: A two-column, fixed-width design with dark color scheme.
 Version    : 1.0
 Released   : 20130920
-
 -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -20,6 +18,8 @@ Released   : 20130920
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
@@ -29,15 +29,15 @@ Released   : 20130920
 <div id="header-wrapper">
 <div id="header" class="container">
 	<div id="logo">
-		<h1><a href="index.html"> <img src="images/logo.png" width="380" height="190" class="ccr" ></a></h1>
+   <h1><a href="index.html"> <img src="images/logo.png" width="380" height="190" class="ccr" ></a></h1>
 	</div>
 	<div id="menu">
 		<ul>
 			<li><a href="index.html" accesskey="1" title="">Inicio</a></li>
-			<li class="current_page_item"><a href="#" accesskey="2" title="">Biblioteca</a></li>
+			<li><a href="biblioteca.html" accesskey="2" title="">Biblioteca</a></li>
 			<li><a href="actividades.html" accesskey="3" title="">Actividades</a></li>
 			<li><a href="historia.html" accesskey="4" title="">Nuestra Historia</a></li>
-			<li><a href="sesion.php" accesskey="5" title="">Inicia Sesión</a></li>
+			<li class="current_page_item"><a href="sesion.php" accesskey="5" title="">Inicia Sesión</a></li>
 		</ul>
 	</div>
 </div></div>
@@ -47,52 +47,77 @@ Released   : 20130920
 <div id="page" class="container">
 	<div id="content">
 		<div class="title">
-			<h2>Biblioteca Digital</h2> <br>
-			<span class="byline">Apuntes, libros y textos</span> </div>
+			<h2>Inicia Sesión</h2>
+			<span class="byline">Inicia Sesión con tu perfil en la página</span> </div>
 
-		<p>En esta sección encontrarás todos los apuntes, libros y textos que usarás a lo largo de la cursada. No olvides prestar atención en clases y actualizar siempre tus apuntes, descargarlos y ponerte al día </p>
+			<!-- Formulario -->
+
+			<h1>Ingresa Tus Datos</h1>
+			<br>
+			<br>
+			<form name="login">
+			     <table width="200" border="0">
+			       <tr>
+			         <th scope="row"><h2>Usuario</h2></th>
+			         <td><span class="cnt">
+			           <input name="usuario" placeholder="Nombre de Usuario" type="text" class="Input" value="" size="20" />
+			         </span></td>
+			       </tr>
+			       <tr>
+							 <br>
+			         <th height="33" scope="row"><h2>Clave</h2></th>
+			         <td><span class="cnt">
+			           <input name="password" placeholder="Contraseña" type="password" class="Input" value="" size="20" />
+			         </span></td>
+			         <td><span class="cnt">
+			           <input value="Inicia Sesión" target="_parent" onclick="Login()" type="button" class="boton"/>
+			         </span></td>
+			       </tr>
+			     </table>
+			</form>
+
+			<!-- Java Script -->
+
+			<script language="JavaScript">
+
+			function Login(){
+			var done=0;
+			var usuario=document.login.usuario.value;
+			var password=document.login.password.value;
+			if (usuario=="PROFESOR" && password=="PROFESOR1") {
+			window.location="iniciop.html";
+			}
+			if (usuario=="ALUMNO" && password=="ALUMNO1") {
+			window.location="inicioa.html";
+			}
+			if (usuario=="" && password=="") {
+			window.location="errorpopup.html";
+			}
+			}
+			</script></center>
+			<script language="Javascript">
+			// Begin -->
+			document.oncontextmenu = function(){return false}
+			// End -->
+			</script>
+
+     <!-- Fin Java Script -->
+
 		<div id="onecolumn">
 			<div class="title">
-				<h2>Catequesis de bautismo</h2>
+				<h1>Soy nuevo en la página</h1>
 			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem.</p>
+			<p>Si sos nuevo en la página podes crear tu perfil y registrarte en la página. <br>
+			 No pierdas tiempo y <a href="usuario.php" target="_blank"> ¡Registrate!</a></p>
 		</div>
-
-	<div id="onecolumn">
-		<div class="title">
-			<h2>Catequesis Del Buen Pastor</h2>
-		</div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem.</p>
 	</div>
-
-	<div id="onecolumn">
-		<div class="title">
-			<h2>Catequesis de Comunión 1</h2>
-		</div>
-			<i><b><a href="sesion.php">Inicia Sesión</a></b> para obtener más información.</i>
-		</div>
-
-</div>
-	<div id="sidebar">
+  <div id="sidebar">
 		<ul class="style1">
 			<li class="first">
-				<h3>Catequesis de Comunión 2</h3>
-					<i><b><a href="sesion.php">Inicia Sesión</a></b> para obtener más información.</i>
-			</li>
-      <li>
-        <h3>Confirmación para niños</h3>
-        	<i><b><a href="sesion.php">Inicia Sesión</a></b> para obtener más información.</i>
-			</li>
-			<li>
-				<h3>Catequesis para Jóvenes</h3>
-					<i><b><a href="sesion.php">Inicia Sesión</a></b> para obtener más información.</i>
-			</li>
-			<li>
-				<h3>Catequesis para Adultos</h3>
-					<i><b><a href="sesion.php">Inicia Sesión</a></b> para obtener más información.</i>
+				<href="sesion.php">
+        <div align="center"> <img src="images/pluma.png"> </div>
 			</li>
 		</ul>
-
 	</div>
 </div>
 <div id="copyright">
@@ -110,15 +135,11 @@ Released   : 20130920
 						<img src="images/instagram.png" width="32" height="32">
 						<p><a href="https://www.instagram.com/capillantrasradelrosario" target="_blank">Seguinos en<br>Instagram</a></p>
 				</li>
-
 				<li>
 						<img src="images/gmail.png" width="32" height="32">
 						<p><a href=" https://mail.google.com/mail/?view=cm&fs=1&to=capillaMRSN@gmail.com&su=Asunto&body=cuerpo%20mensaje" target="_blank">Contactanos<br>Gmail</a></p>
 				</li>
-
 	    </ul>
 	</div>
-
-
 </body>
 </html>
